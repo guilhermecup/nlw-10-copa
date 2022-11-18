@@ -21,6 +21,22 @@ function createCard(date, day, games) {
     `
 }
 
+const header = document.querySelector('header')
+const body = document.querySelector('body')
+header.addEventListener('click', changeColorClass)
+
+function changeColorClass() {
+    let bodyClass = body.getAttribute('class')
+    if (bodyClass == null) {
+        body.setAttribute('class', 'blue')
+    }else if (bodyClass == 'blue') {
+        body.removeAttribute('class')
+        body.setAttribute('class', 'green')
+    }else if (bodyClass == 'green') {
+        body.removeAttribute('class')
+    }
+}
+
 document.querySelector('#cards').innerHTML = 
         createCard(
             '20/11', 'domingo', 
