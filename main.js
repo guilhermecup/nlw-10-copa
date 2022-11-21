@@ -3,7 +3,7 @@ function createGame(playerA, playerB, hour) {
         <li>
             <img src="./assets/icon=${playerA.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").split(" ").join("-")}.svg" alt="Logo ${playerA}" title="${playerA}">
             <strong>${hour}</strong>
-            <img src="./assets/icon=${playerB.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").split(" ").join("-")}.svg" alt=" Logo ${playerB}" title="${playerB}">
+            <img src="./assets/icon=${playerB.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").split(" ").join("-")}.svg" alt="Logo ${playerB}" title="${playerB}">
         </li>
     `
 }
@@ -13,7 +13,7 @@ function createCard(date, day, games) {
     delay = delay + 0.3;
     return `
         <div class="card" style="animation-delay: ${delay}s">
-            <h2>${date} <span>${day}</span></h2>
+            <h2 title="${date}">${date} <span title="${day}">${day}</span></h2>
             <ul>
                 ${games}
             </ul>
@@ -125,3 +125,37 @@ document.querySelector('#cards').innerHTML =
             createGame('Sérvia', 'Suíça', '16:00') +
             createGame('Camarões', 'Brasil', '16:00')
         )
+
+const searchInput = document.getElementById('search-input')
+const allCards = document.querySelectorAll('.card')
+const searchedGame = searchInput.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").replace(/\//g,'').replace("-", '').split(" ").join("")
+
+searchInput.oninput = searchGame
+
+function searchGame() {
+    const searchedGame = searchInput.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").replace(/\//g,'').replace("-", '').split(" ").join("")
+
+    if (searchedGame) {
+        for(let card of allCards) {
+            let cardItems = card.querySelectorAll('h2, span, img')
+            let isCardHidden = true
+    
+            for(let item of cardItems) {
+                let itemTitleSimplified = item.getAttribute('title').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").replace(/\//g,'').replace("-", '').split(" ").join("")
+    
+                if (itemTitleSimplified.includes(searchedGame)) {
+                    isCardHidden = false
+                }
+            }
+
+            if (isCardHidden == true) {
+                card.setAttribute('hidden', '')
+            }
+        }
+
+    } else {
+        for(let card of allCards) {
+            card.removeAttribute('hidden')
+        }
+    }
+}

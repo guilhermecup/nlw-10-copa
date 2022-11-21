@@ -13,7 +13,7 @@
 
 body.blue {
     --card-color-primary: #338af3;
-    --card-title-border-color: #338af3;
+    --card-title-border-color: #3389f3;
     --card-bg-color: #202024;
     --bg: url(./assets/bg-blue.svg);
 }
@@ -51,6 +51,36 @@ body * {
 header {
     margin-bottom: 63px;
     text-align: center;
+}
+
+#search-card {
+    margin: 0px auto;
+    margin-bottom: 32px;
+    padding: 8px 16px;
+    width: fit-content;
+    text-align: center;
+    background: var(--card-bg-color);
+    border-bottom: 2px solid var(--card-color-primary);
+    border-radius: 30px;
+}
+
+#search-card input,
+#search-card button {
+    font-size: 24px;
+    background-color: var(--card-bg-color);
+    color: #F7DD43;
+    border: none;
+}
+
+#search-card input {
+    width: 85%;
+    max-width: 300px;
+}
+
+#search-card button {
+    padding: 0px;
+    margin-left: 16px;
+    color: gray;
 }
 
 #cards {
