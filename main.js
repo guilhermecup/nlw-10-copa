@@ -91,35 +91,35 @@ document.querySelector('#cards').innerHTML =
             createGame('Espanha', 'Alemanha', '16:00')
         ) +
         createCard(
-            '28/11', 'domingo',
+            '28/11', 'segunda-feira',
             createGame('Camarões', 'Sérvia', '07:00') +
             createGame('Coreia do Sul', 'Gana', '10:00') +
             createGame('Brasil', 'Suíça', '13:00') +
             createGame('Portugal', 'Uruguai', '16:00')
         ) +
         createCard(
-            '29/11', 'segunda-feira',
+            '29/11', 'terça-feira',
             createGame('Equador', 'Senegal', '12:00') +
             createGame('Holanda', 'Catar', '12:00') +
             createGame('Irã', 'Estados Unidos', '16:00') +
             createGame('País de Gales', 'Inglaterra', '16:00')
         ) +
         createCard(
-            '30/11', 'terça-feira',
+            '30/11', 'quarta-feira',
             createGame('Tunísia', 'França', '12:00') +
             createGame('Austrália', 'Dinamarca', '12:00') +
             createGame('Polônia', 'Argentina', '16:00') +
             createGame('Arábia Saudita', 'México', '16:00')
         ) +
         createCard(
-            '01/12', 'quarta-feira',
+            '01/12', 'quinta-feira',
             createGame('Croácia', 'Bélgica', '12:00') +
             createGame('Canadá', 'Marrocos', '12:00') +
             createGame('Japão', 'Espanha', '16:00') +
             createGame('Costa Rica', 'Alemanha', '16:00')
         ) +
         createCard(
-            '02/12', 'quinta-feira',
+            '02/12', 'sexta-feira',
             createGame('Coreia do Sul', 'Portugal', '12:00') +
             createGame('Gana', 'Uruguai', '12:00') +
             createGame('Sérvia', 'Suíça', '16:00') +
