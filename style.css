@@ -55,7 +55,6 @@ header {
 
 #search-card {
     margin: 0px auto;
-    margin-bottom: 32px;
     padding: 8px 16px;
     width: fit-content;
     text-align: center;
@@ -83,7 +82,24 @@ header {
     color: gray;
 }
 
-#cards {
+main > h2 {
+    margin: 32px auto;
+    padding: 8px 16px;
+    width: fit-content;
+    text-align: center;
+    font-size: 24px;
+    color: #F7DD43;
+    background: var(--card-bg-color);
+    border-bottom: 2px solid var(--card-color-primary);
+    border-radius: 30px;
+}
+
+#group-stage,
+#round-of-16,
+#quarter-finals,
+#semi-finals,
+#third-place-play-off,
+#final {
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -173,9 +189,21 @@ header {
 }
 
 @media (min-width: 700px) {
-    #cards{
+    #group-stage,
+    #round-of-16,
+    #quarter-finals,
+    #semi-finals,
+    #third-place-play-off,
+    #final {
         max-width: 670px;
         flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    #third-place-play-off,
+    #final {
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
 }

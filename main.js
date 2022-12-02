@@ -37,7 +37,7 @@ function changeColorClass() {
     }
 }
 
-document.querySelector('#cards').innerHTML = 
+document.querySelector('#group-stage').innerHTML = 
         createCard(
             '20/11', 'domingo', 
             createGame('Catar', 'Equador', '13:00')
@@ -126,6 +126,61 @@ document.querySelector('#cards').innerHTML =
             createGame('Camarões', 'Brasil', '16:00')
         )
 
+document.querySelector('#round-of-16').innerHTML =
+        createCard(
+            '03/12', 'sábado',
+            createGame('Holanda', 'Estados Unidos', '12:00') +
+            createGame('Argentina', 'Austrália', '16:00')
+        ) +
+        createCard(
+            '04/12', 'domingo',
+            createGame('França', 'Polônia', '12:00') +
+            createGame('Inglaterra', 'Senegal', '16:00')
+        ) +
+        createCard(
+            '05/12', 'segunda-feira',
+            createGame('Japão', 'Croácia', '12:00') //+
+            //createGame('', '', '16:00')
+        ) +
+        createCard(
+            '06/12', 'terça-feira',
+            createGame('Marrocos', 'Espanha', '12:00') //+
+            //createGame('', '', '16:00')
+        )
+/*
+document.querySelector('#quarter-finals').innerHTML =    
+        createCard(
+            '', '',
+            createGame('', '', '') +
+            createGame('', '', '')
+        ) +
+        createCard(
+            '', '',
+            createGame('', '', '') +
+            createGame('', '', '')
+        )
+
+document.querySelector('#semi-finals').innerHTML =
+        createCard(
+            '', '',
+            createGame('', '', '')
+        ) +
+        createCard(
+            '', '',
+            createGame('', '', '')
+        )
+document.querySelector('#third-place-play-off').innerHTML =
+        createCard(
+            '', '',
+            createGame('', '', '')
+        )
+
+document.querySelector('#final').innerHTML =
+        createCard(
+            '', '',
+            createGame('', '', '')
+        )
+*/
 const searchInput = document.getElementById('search-input')
 const allCards = document.querySelectorAll('.card')
 const searchedGame = searchInput.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").replace(/\//g,'').replace("-", '').split(" ").join("")
