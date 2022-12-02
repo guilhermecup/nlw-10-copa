@@ -139,13 +139,13 @@ document.querySelector('#round-of-16').innerHTML =
         ) +
         createCard(
             '05/12', 'segunda-feira',
-            createGame('Japão', 'Croácia', '12:00') //+
-            //createGame('', '', '16:00')
+            createGame('Japão', 'Croácia', '12:00') +
+            createGame('Brasil', 'Coreia do Sul', '16:00')
         ) +
         createCard(
             '06/12', 'terça-feira',
-            createGame('Marrocos', 'Espanha', '12:00') //+
-            //createGame('', '', '16:00')
+            createGame('Marrocos', 'Espanha', '12:00') +
+            createGame('Portugal', 'Suíça', '16:00')
         )
 /*
 document.querySelector('#quarter-finals').innerHTML =    
