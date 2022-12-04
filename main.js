@@ -147,38 +147,38 @@ document.querySelector('#round-of-16').innerHTML =
             createGame('Marrocos', 'Espanha', '12:00') +
             createGame('Portugal', 'Suíça', '16:00')
         )
-/*
+
 document.querySelector('#quarter-finals').innerHTML =    
         createCard(
-            '', '',
-            createGame('', '', '') +
-            createGame('', '', '')
-        ) +
+            '09/12', 'sexta-feira',
+            createGame('', '', '12:00') +
+            createGame('Holanda', 'Argentina', '16:00')
+        )/* +
         createCard(
-            '', '',
-            createGame('', '', '') +
-            createGame('', '', '')
+            '10/12', 'sábado',
+            createGame('', '', '12:00') +
+            createGame('', '', '16:00')
         )
 
 document.querySelector('#semi-finals').innerHTML =
         createCard(
-            '', '',
-            createGame('', '', '')
+            '13/12', 'terça-feira',
+            createGame('', '', '16:00')
         ) +
         createCard(
-            '', '',
-            createGame('', '', '')
+            '14/12', 'quarta-feira',
+            createGame('', '', '16:00')
         )
 document.querySelector('#third-place-play-off').innerHTML =
         createCard(
-            '', '',
-            createGame('', '', '')
+            '17/12', 'sábado',
+            createGame('', '', '12:00')
         )
 
 document.querySelector('#final').innerHTML =
         createCard(
-            '', '',
-            createGame('', '', '')
+            '18/12', 'domingo',
+            createGame('', '', '12:00')
         )
 */
 const searchInput = document.getElementById('search-input')
