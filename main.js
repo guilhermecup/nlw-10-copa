@@ -153,13 +153,13 @@ document.querySelector('#quarter-finals').innerHTML =
             '09/12', 'sexta-feira',
             createGame('', '', '12:00') +
             createGame('Holanda', 'Argentina', '16:00')
-        )/* +
+        ) +
         createCard(
             '10/12', 'sábado',
             createGame('', '', '12:00') +
-            createGame('', '', '16:00')
+            createGame('Inglaterra', 'França', '16:00')
         )
-
+/*
 document.querySelector('#semi-finals').innerHTML =
         createCard(
             '13/12', 'terça-feira',
