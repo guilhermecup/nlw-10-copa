@@ -151,7 +151,7 @@ document.querySelector('#round-of-16').innerHTML =
 document.querySelector('#quarter-finals').innerHTML =    
         createCard(
             '09/12', 'sexta-feira',
-            createGame('', '', '12:00') +
+            createGame('Croácia', 'Brasil', '12:00') +
             createGame('Holanda', 'Argentina', '16:00')
         ) +
         createCard(
