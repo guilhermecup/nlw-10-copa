@@ -156,7 +156,7 @@ document.querySelector('#quarter-finals').innerHTML =
         ) +
         createCard(
             '10/12', 'sábado',
-            createGame('', '', '12:00') +
+            createGame('Marrocos', 'Portugal', '12:00') +
             createGame('Inglaterra', 'França', '16:00')
         )
 /*
